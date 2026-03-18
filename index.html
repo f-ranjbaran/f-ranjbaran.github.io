@@ -23,29 +23,27 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon solid fa-camera"></span>
+							<img src="images/pg.jpeg" alt="Fatemeh Ranjbaran logo" />
 						</div>
 						<div class="content">
 							<div class="inner">
 								<h1>Fatemeh Ranjbaran</h1>
 								<p>AI &amp; Computer Vision Engineer</p>
-								<p>Building industrial vision and robotics perception systems with deep learning, from model design to edge deployment.</p>
 								<ul class="actions special">
-									<li><a href="#about" class="button primary">View Projects</a></li>
-									<li><a href="#contact" class="button">Contact Me</a></li>
-									<li><a href="https://github.com/f-ranjbaran" class="button icon brands fa-github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-									<li><a href="https://www.linkedin.com/in/fatemeh-ranjbaran" class="button icon brands fa-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-									<!-- TODO: Add the real resume PDF at assets/docs/Fatemeh_Ranjbaran_Resume.pdf -->
-									<li><a href="assets/docs/Fatemeh_Ranjbaran_Resume.pdf" class="button icon solid fa-download">Resume</a></li>
+									<li><a href="#about" class="button primary">About</a></li>
+									<li><a href="#education" class="button">Education</a></li>
+									<li><a href="#experience" class="button">Work Experience</a></li>
+									<li><a href="#projects" class="button">Projects</a></li>
+									<li><a href="#skills" class="button">Skills</a></li>
+									<li><a href="#resume" class="button">Resume</a></li>
 								</ul>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">About</a></li>
-								<li><a href="#work">Experience</a></li>
-								<li><a href="#about">Portfolio</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="https://www.linkedin.com/in/fatemeh-ranjbaran" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"> LinkedIn</a></li>
+								<li><a href="https://github.com/f-ranjbaran" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"> GitHub</a></li>
+								<li><a href="#contact" class="icon solid fa-phone"> Contact Me</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -54,102 +52,119 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
+							<article id="about">
 								<h2 class="major">About</h2>
 								<!-- TODO: Replace with a professional portrait or workspace image. -->
 								<span class="image main"><img src="images/pic01.jpg" alt="Portrait placeholder for Fatemeh Ranjbaran" /></span>
-								<p>Computer Vision Engineer experienced in developing and deploying deep learning models for industrial vision and robotics applications. Expertise in object detection, segmentation, and pose estimation, with hands-on experience building end-to-end machine learning pipelines using Python, PyTorch, and OpenCV.</p>
-								<p><strong>Location:</strong> Bologna, Italy</p>
+								<p>I am an AI &amp; Computer Vision Engineer passionate about building real-world vision systems for industrial robotics.</p>
+								<p>I have worked on designing and deploying an end-to-end AI vision pipeline for robotic palletizing, combining object detection, segmentation, and camera–robot calibration into a complete end-to-end system built and deployed from scratch. The system was designed to operate reliably in real industrial environments, enabling accurate box localization and autonomous pick-and-place execution.</p>
+								<p>What I enjoy most is taking models beyond theory and making them actually work in real conditions. I focus on turning deep learning models into practical solutions, running them efficiently on edge devices using technologies like OpenVINO and DepthAI, and integrating them with robotic systems through PLC / OPC-UA.</p>
+								<p>I am particularly interested in industrial AI, vision-language models, and building scalable computer vision systems that are robust, efficient, and ready for real-world deployment.</p>
 								<ul class="actions">
-									<li><a href="#work" class="button primary">View Experience</a></li>
-									<li><a href="#about" class="button">View Projects</a></li>
+									<li><a href="#experience" class="button primary">Work Experience</a></li>
+									<li><a href="#projects" class="button">Projects</a></li>
 								</ul>
 							</article>
 
 						<!-- Work -->
-							<article id="work">
+							<article id="experience">
 								<h2 class="major">Experience</h2>
 								<!-- TODO: Replace with an image representing industrial AI/robotics work. -->
 								<span class="image main"><img src="images/pic02.jpg" alt="Industrial computer vision and robotics workspace placeholder" /></span>
-								<h3>AI &amp; Computer Vision Engineer</h3>
-								<p><strong>I.E.M.A Company</strong> - Bologna, Italy<br />
-								Sep 2025 - Present</p>
+								<p><strong>AI &amp; Computer Vision Engineer</strong><br />
+								<strong>I.E.M.A – IMA Group, Bologna, Italy</strong><br />
+								<em>Sep 2025 – Present</em></p>
 								<ul>
-									<li>Designed and deployed an end-to-end AI vision pipeline for robotic palletizing on edge devices.</li>
-									<li>Implemented object detection, segmentation, and pose estimation for box localization in industrial environments.</li>
-									<li>Developed camera-robot calibration pipeline enabling pixel-to-mm spatial mapping.</li>
-									<li>Integrated AI perception with robot control via PLC / OPC-UA for autonomous pick-and-place execution.</li>
+									<li>Developed an end-to-end AI vision pipeline for robotic palletizing and depalletizing.</li>
+									<li>Implemented object detection, instance segmentation, and pose estimation for box localization.</li>
+									<li>Deployed GroundingDINO and SAM on edge devices using OAK cameras with OpenVINO acceleration.</li>
+									<li>Built a camera–robot calibration pipeline using OpenCV to convert pixel coordinates into real-world positions.</li>
+									<li>Integrated AI perception with robotic control infrastructure through PLC / OPC-UA.</li>
+									<li>Designed and implemented a vision-language object detection system using OWLv2 with PyTorch and HuggingFace Transformers.</li>
+									<li>Built an interactive visualization interface for detection results.</li>
 								</ul>
-								<h3>AI Research Intern</h3>
-								<p><strong>Mas-Tech srl (Tennis Federation)</strong> - Bologna, Italy<br />
-								Nov 2023 - May 2024</p>
+								<p><strong>AI Research Intern</strong><br />
+								<strong>Mas-Tech srl – Italian Tennis Federation, Bologna, Italy</strong><br />
+								<em>Nov 2023 – May 2024</em></p>
 								<ul>
-									<li>Implemented deep learning models for automated event detection and action segmentation.</li>
-									<li>Applied CNN-RNN and Transformer models for temporal action recognition.</li>
-									<li>Optimized multi-loss functions to enhance model accuracy and robustness.</li>
+									<li>Developed deep learning models for automated action segmentation in tennis matches using CNN-RNN and Transformer architectures.</li>
+									<li>Built pipelines for video processing, temporal modeling, and event detection in sports analytics.</li>
+									<li>Optimized multi-loss training strategies to improve model accuracy and temporal consistency.</li>
+									<li>Implemented experiments and evaluation for model performance on match footage.</li>
 								</ul>
-								<h3>Python Developer with ML Focus</h3>
-								<p><strong>FARABI Hospital</strong> - Tehran, Iran<br />
-								Jan 2015 - Sep 2021</p>
+								<p><strong>Python Developer (Machine Learning Applications)</strong><br />
+								<strong>Farabi Hospital, Tehran, Iran</strong><br />
+								<em>Jan 2015 – Sep 2021</em></p>
 								<ul>
-									<li>Developed and implemented an HIS as part of a 6-person team, optimizing workflows, automating processes, and integrating AI tools for decision support.</li>
-									<li>Integrated machine learning and AI-driven tools into decision support systems.</li>
+									<li>Developed modules for a hospital information system (HIS) as part of a multidisciplinary development team.</li>
+									<li>Implemented automation tools and AI-assisted components to improve workflow efficiency.</li>
+									<li>Built backend services and data processing pipelines using Python.</li>
 								</ul>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">Projects &amp; Skills</h2>
+						<!-- Projects -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
 								<!-- TODO: Replace with a project showcase image or engineering visual. -->
 								<span class="image main"><img src="images/pic03.jpg" alt="Project showcase placeholder for AI and computer vision work" /></span>
 
-								<h3>Core Expertise</h3>
-								<ul>
-									<li>Industrial Vision Systems</li>
-									<li>Detection &amp; Segmentation</li>
-									<li>Pose Estimation &amp; Calibration</li>
-									<li>Deep Learning Deployment</li>
-								</ul>
-
 								<h3>Selected Projects</h3>
-								<ul>
-									<li>AI Vision Pipeline for Robotic Palletizing using Detection and Segmentation Models</li>
-									<li>Object Detection with Image and Text Queries</li>
-									<li>Action Segmentation in Tennis Matches Using Transformers</li>
-									<li>Analysed Breast Cancer Histology Images</li>
-									<li>Image Deblurring</li>
-									<li>Question Answering with Transformers on CoQA</li>
-								</ul>
+								<div>
+									<p><strong>AI Vision Pipeline for Robotic Palletizing using Detection and Segmentation Models</strong><br />&bull; <em>Project at I.E.M.A, Bologna, Italy Developed an end-to-end industrial AI vision pipeline for robotic palletizing and depalletizing in warehouse environments. The system performs object detection, instance segmentation, and pose estimation to accurately localize boxes on pallets and enable reliable robotic manipulation. The perception module integrates GroundingDINO for object detection and SAM for segmentation, deployed on edge devices using OAK cameras with OpenVINO acceleration to enable efficient real-time inference. A camera–robot calibration pipeline was implemented using OpenCV to convert image pixel coordinates into real-world millimeter positions for precise robotic grasping. The AI perception system is integrated with the robotic control infrastructure via PLC / OPC-UA, enabling autonomous pick-and-place execution and real-time monitoring.</em><br /><strong>Tools &amp; Frameworks:</strong> Python • PyTorch • OpenCV • GroundingDINO • SAM • OpenVINO • DepthAI / OAK Cameras • Edge AI Deployment • OPC-UA • FastAPI</p>
+									<p><strong>Object Detection with Image and Text Queries – Project at I.E.M.A</strong><br />&bull; <em>Designed and implemented a vision-language object detection system based on the OWLv2 model, enabling detection of arbitrary objects using text prompts, feature embeddings, and image queries. Implemented the pipeline in Python using PyTorch and HuggingFace Transformers for feature extraction and bounding-box prediction, and developed an interactive web interface for visualization and analysis of detection results.</em><br /><strong>Tools &amp; Frameworks:</strong> PyTorch, HuggingFace Transformers, OWLv2, Gradio, NumPy, Matplotlib</p>
+									<p><strong>Breast Cancer Histology Image Classification – Computer Vision Course</strong><br />&bull; <em>Developed deep learning models for automated classification of breast cancer histology images using the BACH dataset. Implemented and compared two architectures: an attention-enhanced ResNet and a fine-tuned Vision Transformer (ViT) to analyze microscopic tissue images and classify them into four diagnostic categories (Benign, In Situ, Invasive, Normal). The pipeline was built in Python using PyTorch and TorchVision, including dataset preprocessing, model training, and evaluation. Training experiments were tracked with MLflow, and performance was evaluated using accuracy, precision, recall, and F1-score. The project also explored the differences between convolutional and transformer-based architectures for histopathology image analysis.</em><br /><strong>Tools &amp; Frameworks:</strong> PyTorch, TorchVision, Vision Transformers (ViT), ResNet, MLflow</p>
+									<p><strong>Image Deblurring – Deep Learning Course</strong><br />&bull; <em>Developed a deep learning model to restore sharp images from blurred inputs using convolutional neural networks. The training dataset was generated from CIFAR-10 by applying Gaussian blur and noise to create paired blurred–sharp images. The model was trained to reconstruct high-quality images from degraded inputs using convolutional and deconvolutional layers, enabling end-to-end learning of image restoration. The project included dataset generation, model training, and qualitative evaluation of reconstructed images.</em><br /><strong>Tools &amp; Frameworks:</strong> TensorFlow, Keras, NumPy, OpenCV, Matplotlib</p>
+									<p><strong>Question Answering with Transformers on CoQA – NLP Course</strong><br />&bull; <em>Implemented transformer-based models for conversational question answering using the CoQA dataset. Fine-tuned BERT-based architectures (DistilRoBERTa and BERT-Tiny) to predict answer spans within context passages by estimating start and end token probabilities. The project included dataset preprocessing, tokenization of context–question pairs, and experimentation with conversational history to analyze its impact on model performance. Models were evaluated using the F1 metric, and experiments were conducted with multiple random seeds to compare model stability and performance.</em><br /><strong>Tools &amp; Frameworks:</strong> TensorFlow, Transformers, Tokenizers, Scikit-learn, Python</p>
+								</div>
 								<!-- TODO: Add project-specific screenshots, diagrams, or demo links if available. -->
+							</article>
 
-								<h3>Technical Skills</h3>
+						<!-- Skills -->
+							<article id="skills">
+								<h2 class="major">Skills</h2>
+								<h3><strong>Technical Skills</strong></h3>
 								<ul>
-									<li><strong>Programming:</strong> Python (Pandas, NumPy, Matplotlib), C++</li>
-									<li><strong>Machine Learning:</strong> Scikit-learn</li>
-									<li><strong>Deep Learning:</strong> TensorFlow, PyTorch, Keras, Transformers</li>
-									<li><strong>Computer Vision:</strong> OpenCV, YOLO, Object Detection, Segmentation</li>
+									<li><strong>Programming:</strong> Python (NumPy, Pandas, Matplotlib), C++</li>
+									<li><strong>Machine Learning &amp; Deep Learning:</strong> PyTorch, TensorFlow, Keras, Scikit-learn, Transformers</li>
+									<li><strong>Computer Vision:</strong> OpenCV, Object Detection, Image Segmentation, Vision-Language Models</li>
+									<li><strong>AI Systems &amp; Deployment:</strong> Edge AI, OpenVINO, Model Optimization, Real-time Inference, Vision Pipelines</li>
 								</ul>
-
-								<h3>Education</h3>
+								<h3><strong>Professional Skills</strong></h3>
 								<ul>
-									<li><strong>M.Sc. in Artificial Intelligence</strong> - University of Bologna, Italy (Oct 2021 - Mar 2025)</li>
-									<li><strong>B.Sc. in Network Computer Engineering</strong> - University of Applied Science and Technology, Iran (Oct 2011 - Jul 2015)<br />
-									Graduated as top-ranked student in the class.</li>
+									<li>Problem Solving &amp; Analytical Thinking</li>
+									<li>Research &amp; Rapid Prototyping</li>
+									<li>Team Collaboration</li>
+									<li>Communication of Technical Concepts</li>
+									<li>Adaptability in Fast-Paced Engineering Environments</li>
 								</ul>
-
-								<h3>Soft Skills</h3>
+								<h3><strong>Languages</strong></h3>
 								<ul>
-									<li>Teamwork and Collaboration</li>
-									<li>Creativity</li>
-									<li>Critical Thinking</li>
-									<li>Multitasking and Efficiency</li>
+									<li>English — Fluent</li>
+									<li>Italian — A2 (Learning)</li>
+									<li>Persian — Native</li>
 								</ul>
+							</article>
 
-								<h3>Languages</h3>
-								<ul>
-									<li>English: Fluent</li>
-									<li>Italian: A2 in progress</li>
-									<li>Persian: Native</li>
+						<!-- Education -->
+							<article id="education">
+								<h2 class="major">Education</h2>
+								<p><strong>M.Sc. in Artificial Intelligence</strong><br />
+								<strong>University of Bologna, Italy</strong><br />
+								<em>Oct 2021 – Mar 2025</em><br />
+								Thesis: Action Segmentation in Tennis Matches using Deep Learning and Transformers.</p>
+								<p><strong>B.Sc. in Network Computer Engineering</strong><br />
+								<strong>University of Applied Science and Technology, Iran</strong><br />
+								<em>Oct 2011 – Jul 2015</em><br />
+								Graduated as top-ranked student in the class.</p>
+							</article>
+
+						<!-- Resume -->
+							<article id="resume">
+								<h2 class="major">Resume</h2>
+								<p>Download my CV in your preferred language:</p>
+								<ul class="actions">
+									<li><a href="files/fatemeh-ranjbaran-cv-en.pdf" class="button" target="_blank" rel="noopener noreferrer">Download CV (EN)</a></li>
+									<li><a href="files/fatemeh-ranjbaran-cv-it.pdf" class="button" target="_blank" rel="noopener noreferrer">Download CV (IT)</a></li>
 								</ul>
 							</article>
 
@@ -161,6 +176,7 @@
 								<strong>Location:</strong> Bologna, Italy</p>
 								<ul class="actions">
 									<li><a href="mailto:f.ranjbaran2020@gmail.com" class="button primary">Email Me</a></li>
+									<li><a href="tel:+393516349353" class="button icon solid fa-phone">0039 351 634 9353</a></li>
 									<li><a href="https://github.com/f-ranjbaran" class="button icon brands fa-github" target="_blank" rel="noopener noreferrer">GitHub</a></li>
 									<li><a href="https://www.linkedin.com/in/fatemeh-ranjbaran" class="button icon brands fa-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
 								</ul>
@@ -196,7 +212,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Fatemeh Ranjbaran. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Fatemeh Ranjbaran</p>
 					</footer>
 
 			</div>
