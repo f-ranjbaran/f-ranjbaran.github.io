@@ -70,35 +70,29 @@
 								<h2 class="major">Experience</h2>
 								<!-- TODO: Replace with an image representing industrial AI/robotics work. -->
 								<span class="image main"><img src="images/pic02.jpg" alt="Industrial computer vision and robotics workspace placeholder" /></span>
-								<p><strong>AI &amp; Computer Vision Engineer</strong><br />
-								<strong>I.E.M.A – IMA Group, Bologna, Italy</strong><br />
+								<p><strong>AI &amp; Robotics Perception Engineer</strong><br />
+								<strong>I.E.M.A. srl – IMA Group, Bologna, Italy</strong><br />
 								<em>Sep 2025 – Present</em></p>
-								<ul>
-									<li>Developed an end-to-end AI vision pipeline for robotic palletizing and depalletizing.</li>
-									<li>Implemented object detection, instance segmentation, and pose estimation for box localization.</li>
-									<li>Deployed GroundingDINO and SAM on edge devices using OAK cameras with OpenVINO acceleration.</li>
-									<li>Built a camera–robot calibration pipeline using OpenCV to convert pixel coordinates into real-world positions.</li>
-									<li>Integrated AI perception with robotic control infrastructure through PLC / OPC-UA.</li>
-									<li>Designed and implemented a vision-language object detection system using OWLv2 with PyTorch and HuggingFace Transformers.</li>
-									<li>Built an interactive visualization interface for detection results.</li>
-								</ul>
-								<p><strong>AI Research Intern</strong><br />
-								<strong>Mas-Tech srl – Italian Tennis Federation, Bologna, Italy</strong><br />
+								<p>My job is to help robots see the world well enough to act in it. In my first year I've worked across several robot vision projects, from production lines to a mobile robot.</p>
+								<p><strong>Vision for palletizing and depalletizing.</strong> I built the pipeline our robots use to find boxes, measure them and work out exactly where the gripper should go, with sub-millimeter accuracy after calibration. It is integrated with the line's PLCs over OPC-UA. The first version relied on large foundation models and was too slow for production, so I moved it to a lighter architecture and cut end-to-end inference latency by about 70 to 80 percent without losing accuracy.</p>
+								<p><strong>A dual-arm mobile robot.</strong> I work on the vision of a robot with two arms on a mobile base, built to pick up boxes the way a person would. The robot was presented at the Cibus Tec trade fair.</p>
+								<p><strong>3D perception with depth cameras.</strong> I develop systems that estimate box dimensions from depth data and calculate a grasp pose for a robot arm, even when boxes vary in size and sit close together.</p>
+								<p><strong>Finding objects from text or image queries.</strong> I built a detection tool that finds objects from a short text description, an example image or a stored feature map, so the team can test new products without retraining a model. I also built web interfaces that let operators see what the vision system sees and adjust it.</p>
+								<p>What I've learned here is that a good model is only half the job. The other half is knowing when you can trust it.</p>
+								<p><em>Tools: PyTorch, OpenCV, YOLO, Grounding DINO, SAM, OWLv2, OpenVINO, Intel RealSense, ZED X, OAK cameras, FastAPI, Gradio, PLC/OPC-UA</em></p>
+								<p><strong>AI Engineer Intern</strong><br />
+								<strong>Mas-Tech srl (Italian Tennis Federation project), Bologna, Italy</strong><br />
 								<em>Nov 2023 – May 2024</em></p>
-								<ul>
-									<li>Developed deep learning models for automated action segmentation in tennis matches using CNN-RNN and Transformer architectures.</li>
-									<li>Built pipelines for video processing, temporal modeling, and event detection in sports analytics.</li>
-									<li>Optimized multi-loss training strategies to improve model accuracy and temporal consistency.</li>
-									<li>Implemented experiments and evaluation for model performance on match footage.</li>
-								</ul>
-								<p><strong>Python Developer (Machine Learning Applications)</strong><br />
-								<strong>Farabi Hospital, Tehran, Iran</strong><br />
+								<p>This internship was also my Master's thesis. The Italian Tennis Federation wanted to analyze matches automatically from video. My task was temporal action segmentation and event detection: recognizing serves, faults, balls going out and balls hitting the net. Counting those events gave the federation match statistics without anyone tagging the video by hand.</p>
+								<p>That turned out to be much harder than recognizing a single image. Many events last only a fraction of a second and look very similar to each other, so the model has to follow the game over time to tell them apart. I built and compared recurrent networks on top of CNN features and Transformer models, and designed a multi-loss training objective. The final model improved on the baselines I started from.</p>
+								<p>This was my first time working with models that have to understand time, not just single frames. That idea, watching a sequence and understanding what is happening, is exactly what a robot needs too.</p>
+								<p><em>Tools: PyTorch, CNN-RNN, Transformers, video processing</em></p>
+								<p><strong>Python Developer &amp; Project Manager</strong><br />
+								<strong>FARABI Hospital, Tehran University of Medical Sciences, Tehran, Iran</strong><br />
 								<em>Jan 2015 – Sep 2021</em></p>
-								<ul>
-									<li>Developed modules for a hospital information system (HIS) as part of a multidisciplinary development team.</li>
-									<li>Implemented automation tools and AI-assisted components to improve workflow efficiency.</li>
-									<li>Built backend services and data processing pipelines using Python.</li>
-								</ul>
+								<p>For six years I built the hospital information system that doctors and staff used every day. I started on the backend in Python, later added machine learning tools to support clinical decisions, and eventually managed the project and led a team of six engineers.</p>
+								<p>In a hospital, a bug is never just a bug. It can slow down someone's care. That stayed with me, and it is a big part of why I care so much about AI that knows its own limits.</p>
+								<p><em>Tools: Python, Django, machine learning, Scrum</em></p>
 							</article>
 
 						<!-- Projects -->
