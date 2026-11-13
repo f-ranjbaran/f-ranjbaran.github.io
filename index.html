@@ -6,10 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Fatemeh Ranjbaran | AI & Computer Vision Engineer</title>
+		<title>Fatemeh Ranjbaran | AI &amp; Robotics Perception Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="AI & Computer Vision Engineer specializing in industrial vision systems, robotics perception pipelines, and deep learning deployment." />
+		<meta name="description" content="AI &amp; Robotics Perception Engineer working on 3D perception for robotic manipulation, uncertainty quantification and embodied AI." />
 		<!-- TODO: Add a real favicon file and replace this placeholder reference. -->
 		<link rel="icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Fatemeh Ranjbaran</h1>
-								<p>AI &amp; Computer Vision Engineer</p>
+								<p>AI &amp; Robotics Perception Engineer</p>
 								<ul class="actions special">
 									<li><a href="#about" class="button primary">About</a></li>
 									<li><a href="#education" class="button">Education</a></li>
@@ -55,10 +55,10 @@
 								<h2 class="major">About</h2>
 								<!-- TODO: Replace with a professional portrait or workspace image. -->
 								<span class="image main"><img src="images/pic01.jpg" alt="Portrait placeholder for Fatemeh Ranjbaran" /></span>
-								<p>I am an AI &amp; Computer Vision Engineer passionate about building real-world vision systems for industrial robotics.</p>
-								<p>I have worked on designing and deploying an end-to-end AI vision pipeline for robotic palletizing, combining object detection, segmentation, and camera–robot calibration into a complete end-to-end system built and deployed from scratch. The system was designed to operate reliably in real industrial environments, enabling accurate box localization and autonomous pick-and-place execution.</p>
-								<p>What I enjoy most is taking models beyond theory and making them actually work in real conditions. I focus on turning deep learning models into practical solutions, running them efficiently on edge devices using technologies like OpenVINO and DepthAI, and integrating them with robotic systems through PLC / OPC-UA.</p>
-								<p>I am particularly interested in industrial AI, vision-language models, and building scalable computer vision systems that are robust, efficient, and ready for real-world deployment.</p>
+								<p>I'm an AI and robotics perception engineer based in Bologna. I build vision systems that help robots see and pick up objects.</p>
+								<p>At I.E.M.A (IMA Group), I work on robot vision for box picking. This includes the vision system of a dual-arm mobile robot and 3D perception for industrial robot arms, where depth cameras are used to estimate box dimensions and compute grasp poses.</p>
+								<p>In real deployments, a model can make mistakes without anyone noticing, including the robot itself. That's why I'm interested in uncertainty quantification, calibration and embodied AI: I want robots that know when they might be wrong.</p>
+								<p>Before AI, I spent six years building software and machine learning tools for the hospital information system at FARABI Hospital in Tehran. That's where I learned how much reliability matters when software affects people. I have an MSc in Artificial Intelligence from the University of Bologna.</p>
 								<ul class="actions">
 									<li><a href="#experience" class="button primary">Work Experience</a></li>
 									<li><a href="#projects" class="button">Projects</a></li>
@@ -85,7 +85,6 @@
 								<em>Nov 2023 – May 2024</em></p>
 								<p>This internship was also my Master's thesis. The Italian Tennis Federation wanted to analyze matches automatically from video. My task was temporal action segmentation and event detection: recognizing serves, faults, balls going out and balls hitting the net. Counting those events gave the federation match statistics without anyone tagging the video by hand.</p>
 								<p>That turned out to be much harder than recognizing a single image. Many events last only a fraction of a second and look very similar to each other, so the model has to follow the game over time to tell them apart. I built and compared recurrent networks on top of CNN features and Transformer models, and designed a multi-loss training objective. The final model improved on the baselines I started from.</p>
-								<p>This was my first time working with models that have to understand time, not just single frames. That idea, watching a sequence and understanding what is happening, is exactly what a robot needs too.</p>
 								<p><em>Tools: PyTorch, CNN-RNN, Transformers, video processing</em></p>
 								<p><strong>Python Developer &amp; Project Manager</strong><br />
 								<strong>FARABI Hospital, Tehran University of Medical Sciences, Tehran, Iran</strong><br />
@@ -99,15 +98,19 @@
 							<article id="projects">
 								<h2 class="major">Projects</h2>
 								<!-- TODO: Replace with a project showcase image or engineering visual. -->
-								<span class="image main"><img src="images/pic03.jpg" alt="Project showcase placeholder for AI and computer vision work" /></span>
+								<span class="image main"><img src="images/pic04.jpg" alt="3D perception, calibrated uncertainty and temporal understanding" /></span>
 
 								<h3>Selected Projects</h3>
 								<div>
-									<p><strong>AI Vision Pipeline for Robotic Palletizing using Detection and Segmentation Models</strong><br />&bull; <em>Project at I.E.M.A, Bologna, Italy Developed an end-to-end industrial AI vision pipeline for robotic palletizing and depalletizing in warehouse environments. The system performs object detection, instance segmentation, and pose estimation to accurately localize boxes on pallets and enable reliable robotic manipulation. The perception module integrates GroundingDINO for object detection and SAM for segmentation, deployed on edge devices using OAK cameras with OpenVINO acceleration to enable efficient real-time inference. A camera–robot calibration pipeline was implemented using OpenCV to convert image pixel coordinates into real-world millimeter positions for precise robotic grasping. The AI perception system is integrated with the robotic control infrastructure via PLC / OPC-UA, enabling autonomous pick-and-place execution and real-time monitoring.</em><br /><strong>Tools &amp; Frameworks:</strong> Python • PyTorch • OpenCV • GroundingDINO • SAM • OpenVINO • DepthAI / OAK Cameras • Edge AI Deployment • OPC-UA • FastAPI</p>
-									<p><strong>Object Detection with Image and Text Queries – Project at I.E.M.A</strong><br />&bull; <em>Designed and implemented a vision-language object detection system based on the OWLv2 model, enabling detection of arbitrary objects using text prompts, feature embeddings, and image queries. Implemented the pipeline in Python using PyTorch and HuggingFace Transformers for feature extraction and bounding-box prediction, and developed an interactive web interface for visualization and analysis of detection results.</em><br /><strong>Tools &amp; Frameworks:</strong> PyTorch, HuggingFace Transformers, OWLv2, Gradio, NumPy, Matplotlib</p>
-									<p><strong>Breast Cancer Histology Image Classification – Computer Vision Course</strong><br />&bull; <em>Developed deep learning models for automated classification of breast cancer histology images using the BACH dataset. Implemented and compared two architectures: an attention-enhanced ResNet and a fine-tuned Vision Transformer (ViT) to analyze microscopic tissue images and classify them into four diagnostic categories (Benign, In Situ, Invasive, Normal). The pipeline was built in Python using PyTorch and TorchVision, including dataset preprocessing, model training, and evaluation. Training experiments were tracked with MLflow, and performance was evaluated using accuracy, precision, recall, and F1-score. The project also explored the differences between convolutional and transformer-based architectures for histopathology image analysis.</em><br /><strong>Tools &amp; Frameworks:</strong> PyTorch, TorchVision, Vision Transformers (ViT), ResNet, MLflow</p>
-									<p><strong>Image Deblurring – Deep Learning Course</strong><br />&bull; <em>Developed a deep learning model to restore sharp images from blurred inputs using convolutional neural networks. The training dataset was generated from CIFAR-10 by applying Gaussian blur and noise to create paired blurred–sharp images. The model was trained to reconstruct high-quality images from degraded inputs using convolutional and deconvolutional layers, enabling end-to-end learning of image restoration. The project included dataset generation, model training, and qualitative evaluation of reconstructed images.</em><br /><strong>Tools &amp; Frameworks:</strong> TensorFlow, Keras, NumPy, OpenCV, Matplotlib</p>
-									<p><strong>Question Answering with Transformers on CoQA – NLP Course</strong><br />&bull; <em>Implemented transformer-based models for conversational question answering using the CoQA dataset. Fine-tuned BERT-based architectures (DistilRoBERTa and BERT-Tiny) to predict answer spans within context passages by estimating start and end token probabilities. The project included dataset preprocessing, tokenization of context–question pairs, and experimentation with conversational history to analyze its impact on model performance. Models were evaluated using the F1 metric, and experiments were conducted with multiple random seeds to compare model stability and performance.</em><br /><strong>Tools &amp; Frameworks:</strong> TensorFlow, Transformers, Tokenizers, Scikit-learn, Python</p>
+									<p><strong>Calibrated Uncertainty for Conditional Shape Generators</strong><br />&bull; <em>Can a conditional generative model tell us how uncertain its shapes are? I studied this on synthetic 2D contours whose true conditional distribution is known, so every generated population and prediction set can be checked against the truth.</em></p>
+									<p><em>I trained a five-seed conditional VAE ensemble and compared generated and true populations with the 2-Wasserstein distance. No value of β got both the mean shape and the spread right: high β led to posterior collapse, low β to a prior hole. I then built prediction sets from Mahalanobis nonconformity scores. A naive chi-square threshold covered under 7% of test shapes, while split conformal calibration stayed within 3 percentage points of nominal coverage. Broken down by condition, however, coverage at 90% nominal fell from 0.98 to 0.83, which shows that a marginal guarantee can hide local miscalibration.</em></p>
+									<span class="image fit"><img src="https://raw.githubusercontent.com/f-ranjbaran/conformal-geometry-generators/main/results/figures/conditional_coverage.png" alt="Split conformal coverage by condition bin" /></span>
+									<p><strong>Tools &amp; Frameworks:</strong> Python, PyTorch, conditional VAE, conformal prediction, NumPy, SciPy, pytest</p>
+									<p><a href="https://github.com/f-ranjbaran/conformal-geometry-generators" target="_blank">Code and results on GitHub</a></p>
+									<p><strong>Vision Pipeline for Robotic Palletizing and Depalletizing (I.E.M.A)</strong><br />&bull; <em>Object detection, instance segmentation and pose estimation to localize boxes on pallets, with camera–robot calibration that maps pixel coordinates to millimeter positions for grasping. Deployed on edge devices and integrated with the robot control system over PLC / OPC-UA.</em><br /><strong>Tools &amp; Frameworks:</strong> Python, PyTorch, OpenCV, Grounding DINO, SAM, OpenVINO, OAK cameras, OPC-UA, FastAPI</p>
+									<p><strong>Open-Vocabulary Object Detection with Text and Image Queries (I.E.M.A)</strong><br />&bull; <em>A vision-language detection system based on OWLv2 that detects arbitrary objects from text prompts, image queries or stored feature embeddings, with an interactive web interface for visual analysis of the results.</em><br /><strong>Tools &amp; Frameworks:</strong> PyTorch, Hugging Face Transformers, OWLv2, Gradio</p>
+									<p><strong>Breast Cancer Histology Image Classification</strong><br />&bull; <em>Classified histology images from the BACH dataset into four classes (normal, benign, in situ and invasive carcinoma). I compared an attention-enhanced ResNet with a fine-tuned Vision Transformer to see how convolutional and transformer architectures differ on microscopic tissue images, and evaluated them with accuracy, precision, recall and F1.</em><br /><strong>Tools &amp; Frameworks:</strong> PyTorch, TorchVision, ResNet, Vision Transformer (ViT), MLflow</p>
+									<p><strong>Conversational Question Answering on CoQA</strong><br />&bull; <em>Fine-tuned DistilRoBERTa and BERT-Tiny to predict answer spans in multi-turn conversations, and measured how much the dialogue history improves the answers. Results were compared with F1 across multiple random seeds to check model stability.</em><br /><strong>Tools &amp; Frameworks:</strong> TensorFlow, Hugging Face Transformers, Tokenizers, scikit-learn</p>
 								</div>
 								<!-- TODO: Add project-specific screenshots, diagrams, or demo links if available. -->
 							</article>
